@@ -53,6 +53,7 @@
 #define WS1102  46
 #define TPP3WG3 47
 #define TPP2WG3 48
+#define EM3000W 49
 
 #define LCD_DISABLED 0
 #define LCD_ENABLED 1

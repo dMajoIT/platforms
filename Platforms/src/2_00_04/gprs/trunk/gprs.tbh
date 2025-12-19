@@ -113,7 +113,7 @@
 'Only relevant when GPRS_MODULE_EXTERNAL is 0.
 'Keep at default value for NB1010 and DS101x devices.
 #ifndef GPRS_RESET
-	#if PLATFORM_ID=TPP2WG2
+	#if PLATFORM_ID=TPP2WG2 or PLATFORM_ID=TPP2WG3
 		#if GPRS_SER_PORT=0
 			#define GPRS_RESET PL_IO_NUM_1
 		#elif GPRS_SER_PORT=1
@@ -123,7 +123,7 @@
 		#elif GPRS_SER_PORT=3
 			'this choice is not available
 		#endif
-	#elif PLATFORM_ID=TPP3WG2
+	#elif PLATFORM_ID=TPP3WG2 or PLATFORM_ID=TPP3WG3
 		#if GPRS_SER_PORT=0
 			#define GPRS_RESET PL_IO_NUM_4
 		#elif GPRS_SER_PORT=1
@@ -144,7 +144,7 @@
 'Only relevant when GPRS_MODULE_EXTERNAL is 0.
 'Keep at default value for NB1010 and DS101x devices.
 #ifndef GPRS_POWER
-	#if PLATFORM_ID=TPP2WG2
+	#if PLATFORM_ID=TPP2WG2 or PLATFORM_ID=TPP2WG3
 		#if GPRS_SER_PORT=0
 			#define GPRS_POWER PL_IO_NUM_10_RX1
 		#elif GPRS_SER_PORT=1
@@ -154,7 +154,7 @@
 		#elif GPRS_SER_PORT=3
 			'this choice is not available
 		#endif
-	#elif PLATFORM_ID=TPP3WG2
+	#elif PLATFORM_ID=TPP3WG2 or PLATFORM_ID=TPP3WG3
 		#if GPRS_SER_PORT=0
 			#define GPRS_POWER PL_IO_NUM_33
 		#elif GPRS_SER_PORT=1

@@ -1,0 +1,12 @@
+
+property sock.httppassword
+'<b>PROPERTY (STRING), DEFAULT VALUE= "". </b><br><br>
+'Sets or returns the HTTP server password for Digest Authentication.<br><br>
+'If this property is set to an empty string, authentication is disabled.<br>
+'By default,no password is set,so authentication is turned off.<br>
+'The maximum password length is 32 characters. If a longer password is provided,<br>
+'it is truncated to the first 32 characters.<br>
+'<br><br>
+    get = syscall(925) as string
+    set = syscall(926) (byref httppassword as string)
+end property
